@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Kanit', sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to top, rgb(117, 132, 132), white);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+.about-section-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.about-section-wrapper .text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-section-wrapper h1 {
+  margin-bottom: 3rem;
+}
+.about-section-wrapper .text-container p {
+  width: 50rem;
+  margin-bottom: 3rem;
+}
+.about-section-wrapper .origin-city-container{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.about-section-wrapper .map-origin{
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: whitesmoke;
+  border: solid black 1px;
+  border-radius: 2rem;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.origin-city-container h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: wheat;
+  font-weight: bold;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.maps-section-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  font-size: 1.6rem;
+}
+.main-maps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.visited-places-container {
+  width: 80%;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: whitesmoke;
+  border: solid black 1px;
+  border-radius: 2rem;
+  box-shadow: 5px 10px 8px #888888;
+}
+.visited-places-container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  color: wheat;
+  font-weight: bold;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.map {
+  display: none;
+}
+.map iframe {
+  width: 100%;
+}
+.map.active {
+  display: block;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-maps-container .buttons button {
+  margin-top: 1rem;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+  background-color: whitesmoke;
+}
+.buttons button:disabled {
+  cursor: not-allowed;
+}

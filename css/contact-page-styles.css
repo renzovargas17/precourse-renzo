@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Kanit', sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to top, rgb(117, 132, 132), white);
+
+  height: 100vh;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 30%;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  margin-top: 2rem;
+}
+.form-container div input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+.form-container textarea.comments {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-family: inherit;
+}
+.form-container .agreement-select {
+  display: flex;
+  flex-direction: row;
+}
+.form-container .agreement-select * {
+  margin-right: 1rem;
+}
+.form-container button {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}

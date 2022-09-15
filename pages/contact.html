@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header-footer-styles.css" />
+    <link rel="stylesheet" href="/css/contact-page-styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-item">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="form-container">
+        <h1>Contact me!</h1>
+        <form action="https://formspree.io/f/mjvzgygd" method="post" id="form" target="_blank">
+          <div>
+            <label for="nameInput">First Name</label>
+            <input type="text" name="First Name" id="nameInput"  placeholder="Enter your first name. (Required)"> 
+          </div>
+          <div>
+            <label for="lastNameInput">Last Name</label>
+            <input type="text" name="Last Name" id="lastNameInput" placeholder="Enter your last name (Optional)">
+          </div>
+          <div>
+            <label for="emailInput">e-mail</label>
+            <input type="email" name="e-mail" id="emailInput"  placeholder="example@example.com (Required)">
+          </div>
+          <div>
+            <label for="commentsInput">Comments</label>
+            <textarea name="Comments" id="commentsInput" cols="30" rows="10" class="comments" placeholder="Enter your comments... (Required)"></textarea>
+          </div>
+          <div>
+            <p>I want to receive casual adverstising content by e-mail:</p>
+            <div class="agreement-select">
+              <label for="yesButton">yes</label>
+              <input type="radio" name="advertising" id="yesButton" value="yes" class="radio-button">
+              <label for="noButton">no</label>
+              <input type="radio" name="advertising" id="noButton" value="no" class="radio-button">  
+            </div>
+          </div>
+          <button disabled type="" id="submitBtn">Submit</button>
+        </form>
+      </main>
+      </div>
+      
+    <footer>
+      <nav class="footer-nav-item">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="languages-container">
+        <p id="footer-text"></p>
+      </div>
+    </footer>
+    <script src="/js/footer.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>
