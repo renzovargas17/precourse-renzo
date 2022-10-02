@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "my-font";
+  src: url(/fonts/Kanit-Regular.ttf);
+}
 html {
-  font-family: 'Kanit', sans-serif;
   font-size: 62.5%;
+  font-family: "my-font";
 }
 body {
   background-image: linear-gradient(to top, rgb(117, 132, 132), white);
