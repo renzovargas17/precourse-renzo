@@ -100,9 +100,7 @@ justify-content: center;
   font-size: 1.5rem;
 }
 
-.map {
-  display: none;
-}
+
 .map iframe {
   width: 100%;
 }

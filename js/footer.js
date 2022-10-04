@@ -1,21 +1,24 @@
-const languages = ["HTML", "CSS", "JavaScript"];
+const languages = ["HTML", "CSS", "JavaScript", "HTML"];
 const footerText = document.getElementById("footer-text");
 
 const printText = (place, array) => {
   const fixedText = "This website has been created with: ";
   const languagesList = [];
-  array.forEach((lan) => {
+  array.forEach((element, index) => {
     let listItem;
     switch (true) {
-      case (lan == array[0] && array.length <= 2) ||
-        lan == array[array.length - 2]:
-        listItem = `${lan} `;
+      case (index == 0 && array.length <= 2) ||
+        index == array.length - 2:
+        console.log('first case');
+        listItem = `${element} `;
         break;
-      case lan !== array[array.length - 1] && lan !== array[array.length - 2]:
-        listItem = `${lan}, `;
+      case index !== array.length - 1 && index !== array.length - 2:
+        console.log('second case');
+        listItem = `${element}, `;
         break;
-      case array.length > 1 && lan === array[array.length - 1]:
-        listItem = `and ${lan}`;
+      case array.length > 1 && index === array.length - 1:
+        console.log('third case ');
+        listItem = `and ${element}`;
         break;
     }
     languagesList.push(listItem);

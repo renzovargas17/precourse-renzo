@@ -18,5 +18,8 @@ form.addEventListener("input", () => {
   }
 });
 
+
+
+
 //I could't find a way to validate if radio buttons are checked.
 // I tried a to loop through the node list and check if radioBtn.checked but I didn't success.
